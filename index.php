@@ -7,12 +7,12 @@
   <h1>Welcome to my guessing game</h1>
 
   <?php
-$correctnumber=26; //change this number //
+$correctnumber=45; //change this number //
 if(isset($_GET['guess']))
 {
   if (is_numeric($_GET['guess'])===FALSE)
  {
-echo "Your guess is not a number";
+echo "Your guess is too short";
 }
 else if ($_GET['guess']<$correctnumber)
  {
